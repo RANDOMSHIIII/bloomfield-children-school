@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bloomfield Children School</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #263238;
+      background: #f7fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 15px #00000012;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .school-logo {
+      width: 85px;
+      height: 85px;
+      object-fit: contain;
+    }
+
+    .brand h2 {
+      color: #078b69;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .brand p {
+      color: #f07832;
+      font-size: 13px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #263238;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #078b69;
+    }
+
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(120deg, #087f68, #18b5b0);
+      color: white;
+      text-align: center;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: #ffffff24;
+      padding: 7px 17px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff9c43;
+      color: #172b28;
+      padding: 13px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: #ffc078;
+    }
+
+    section {
+      padding: 65px 7%;
+      scroll-margin-top: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: #087f68;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 35px;
+      color: #627078;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px #0000000b;
+      border-bottom: 4px solid #17ad8a;
+    }
+
+    .card .emoji {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #087f68;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .admissions {
+      background: #e8f7f2;
+      text-align: center;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 12px 0;
+    }
+
+    footer {
+      background: #123d36;
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .brand {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      section {
+        padding: 48px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SCHOOL LOGO AND HEADER -->
+  <header>
+    <div class="brand">
+      <img src="logo.jpg"
+           alt="The Bloomfield Children School Logo"
+           class="school-logo">
+
+      <div>
+        <h2>The Bloomfield Children School</h2>
+        <p>...In Pursuit of Excellence</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- WELCOME SECTION -->
+  <main>
+    <section class="hero" id="home">
+      <span class="tag">Welcome to Bloomfield</span>
+
+      <h1>Building Bright Futures,<br>One Child at a Time</h1>
+
+      <p>
+        Discover a caring learning environment where children
+        develop knowledge, confidence, creativity and character.
+      </p>
+
+
+      <a href="#about" class="btn">Discover Our School</a>
+      <a href="#admissions" class="btn">Explore Admissions</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <h2 class="section-title">About Our School</h2>
+
+      <p class="section-intro">
+        At The Bloomfield Children School, we believe every child
+        deserves the opportunity to learn, grow and succeed.
+        Our goal is to encourage excellence in learning and character.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">📚</div>
+          <h3>Quality Education</h3>
+          <p>
+            Encouraging curiosity, understanding and a love of learning.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌱</div>
+          <h3>Character Development</h3>
+          <p>
+            Helping children grow in responsibility, respect and confidence.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌟</div>
+          <h3>Every Child Matters</h3>
+          <p>
+            Supporting children's individual talents and potential.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="news">
+      <h2 class="section-title">School News & Updates</h2>
+
+      <p class="section-intro">
+        Stay connected with activities and announcements from our school.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">📢</div>
+          <h3>School Announcements</h3>
+          <p>Important school updates will appear here.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🎨</div>
+          <h3>School Activities</h3>
+          <p>Discover learning activities and special school events.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🏆</div>
+          <h3>Celebrating Success</h3>
+          <p>Share school achievements and children's accomplishments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMISSIONS SECTION -->
+    <section class="admissions" id="admissions">
+      <h2 class="section-title">Admissions</h2>
+
+      <p class="section-intro">
+        Give your child an opportunity to learn, grow and pursue excellence
+        at The Bloomfield Children School.
+      </p>
+
+      <a href="#contact" class="btn">Enquire About Admission</a>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+
+      <p class="section-intro">
+        Would you like to learn more about our school or admissions?
+        We would be happy to hear from you.
+      </p>
+
+      <p><strong>School:</strong> The Bloomfield Children School</p>
+      <p><strong>Motto:</strong> In Pursuit of Excellence</p>
+      <p>Phone number and email can be added here.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>The Bloomfield Children School</strong></p>
+    <p>...In Pursuit of Excellence</p>
+    <p>&copy; 2026 The Bloomfield Children School. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
